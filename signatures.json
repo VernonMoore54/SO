@@ -6,9 +6,9 @@
   "signatures": {
     "RUN_SPEED_TABLE": {
       "pattern": "48 8B 05 ?? ?? ?? ?? 48 8B 1C C8",
-      "mask":    "xxx????xxxx",
-      "offset":  0,
-      "module":  "sogame.exe",
+      "mask": "xxx????xxxx",
+      "offset": 0,
+      "module": "sogame.exe",
       "comment": "Stable sig inside entity speed lookup (xmm9/xmm10 preamble)"
     }
   },
