@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0",
+  "game": "sogame.exe",
+  "last_updated": "2025-07-08",
+  "description": "Auto-offsets for run-speed manipulation",
+  "signatures": {
+    "RUN_SPEED_TABLE": {
+      "pattern": "48 8B 05 ?? ?? ?? ?? 48 8B 1C C8",
+      "mask":    "xxx????xxxx",
+      "offset":  0,
+      "module":  "sogame.exe",
+      "comment": "Stable sig inside entity speed lookup (xmm9/xmm10 preamble)"
+    }
+  },
+  "config": {
+    "github_url": "<<<PUT_RAW_URL_HERE>>>",
+    "check_interval": 3600
+  }
+}
