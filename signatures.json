@@ -1,19 +1,12 @@
 {
-  "version": "1.0.0",
-  "game": "sogame.exe",
-  "last_updated": "2025-07-08",
-  "description": "Auto-offsets for run-speed manipulation",
+  "version": "1.2.0",
   "signatures": {
     "RUN_SPEED_TABLE": {
       "pattern": "48 8B 05 ?? ?? ?? ?? 48 8B 1C C8",
-      "mask": "xxx????xxxx",
-      "offset": 0,
-      "module": "sogame.exe",
-      "comment": "Stable sig inside entity speed lookup (xmm9/xmm10 preamble)"
+      "mask":    "xxx????xxxx",
+      "offset":  0,
+      "module":  "sogame.exe",
+      "comment": "mov rax,[speedTable] → rbx = [rax+rcx*8]"
     }
-  },
-  "config": {
-    "github_url": "https://raw.githubusercontent.com/VernonMoore54/SO/refs/heads/main/signatures.json",
-    "check_interval": 3600
   }
 }
