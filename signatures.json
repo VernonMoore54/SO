@@ -13,7 +13,7 @@
     }
   },
   "config": {
-    "github_url": "<<<PUT_RAW_URL_HERE>>>",
+    "github_url": "https://raw.githubusercontent.com/VernonMoore54/SO/refs/heads/main/signatures.json",
     "check_interval": 3600
   }
 }
